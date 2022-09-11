@@ -101,12 +101,21 @@ Logical : && || ! and or not
 #     puts a
 # end
 
-numbers = [1, 2, 3, 4, 5]
+# numbers = [1, 2, 3, 4, 5]
 
-for number in numbers
-    puts "#{number}"
-end
+# for number in numbers
+#     print "#{number}"
+# end
 
+# groceries = ['mangos', 'strawberries', 'sweet potatoes']
+
+# groceries.each do |food|
+#     puts "Get some #{food}"
+# end
+
+# (0..8).each do |i|
+#     puts "# #{i}"
+# end
 
 
 
