@@ -94,12 +94,19 @@ Logical : && || ! and or not
 #     puts y
 # end
 
-a = 1
-until a >= 10
-    a += 1
-    next unless (a % 2) == 0
-    puts a
+# a = 1
+# until a >= 10
+#     a += 1
+#     next unless (a % 2) == 0
+#     puts a
+# end
+
+numbers = [1, 2, 3, 4, 5]
+
+for number in numbers
+    puts "#{number}"
 end
+
 
 
 
