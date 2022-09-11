@@ -168,16 +168,16 @@ Logical : && || ! and or not
 
 # puts multiline_string
 
-first_name = "Daniel"
-last_name = "Denton"
+# first_name = "Daniel"
+# last_name = "Denton"
 
 # # concatenation
-# full_name = first_name + last_name
+# # full_name = first_name + last_name
 
-middle_name = "Moyer"
+# middle_name = "Moyer"
 
-# interpolation
-full_name = "#{first_name} #{middle_name} #{last_name}"
+# # interpolation
+# full_name = "#{first_name} #{middle_name} #{last_name}"
 
 # # returns a boolean
 # puts full_name.include?("Moyer")
@@ -240,6 +240,80 @@ full_name = "#{first_name} #{middle_name} #{last_name}"
 # \r carriage
 # \t tab
 # \v verticle tab
+
+# class Animal
+#     def initialize
+#         puts "Create a new animal"
+#     end
+
+#     def set_name(new_name)
+#         @name = new_name
+#     end
+
+#     def get_name
+#         @name
+#     end
+
+#     def name
+#         @name
+#     end
+
+#     def name=(new_name)
+#         if new_name.is_a?(Numeric)
+#             puts "Can't be a number"
+#         else
+#             @name = new_name
+#         end
+
+#     end
+# end
+
+# dog = Animal.new
+# dog.set_name("Rumpelina")
+# puts dog.get_name
+# puts dog.name
+
+# dog.name = "Abby"
+# puts dog.name
+
+
+# class Dog
+#     # write getters and setters separately
+#     # attr_reader :name, :height, :weight
+#     # attr_writer :name, :height, :weight
+#     # or write them at the same time
+#     attr_accessor :name, :height, :weight
+
+#     def bark
+#         return "Bark"
+#     end
+# end
+
+# rump = Dog.new
+
+# rump.name = "Rump"
+
+# puts rump.name
+
+# # inherting another class
+# class Chihuahua < Dog
+#     def bark
+#         return "Squeek Bark"
+#     end
+# end
+
+# winnie = Chihuahua.new
+# winnie.name = "Winnie"
+
+# # printf is print format
+# # %s for string %d for integers and %f for floats
+# printf "%s goes %s \n", winnie.name, winnie.bark()
+
+
+
+
+
+
 
 
 
