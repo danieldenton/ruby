@@ -160,6 +160,91 @@ Logical : && || ! and or not
 #     puts "That is an impossible age"
 # end
 
+# multiline_string = <<EOM
+# This is a very long string
+# that contains interpolation
+# like #{4+5} \n\n
+# EOM
+
+# puts multiline_string
+
+first_name = "Daniel"
+last_name = "Denton"
+
+# # concatenation
+# full_name = first_name + last_name
+
+middle_name = "Moyer"
+
+# interpolation
+full_name = "#{first_name} #{middle_name} #{last_name}"
+
+# # returns a boolean
+# puts full_name.include?("Moyer")
+
+# # returns the length
+# puts full_name.size
+
+# puts "vowels : " + full_name.count("aeiou").to_s
+# # above is self explanatory below the ^ excludes the vowels
+# puts "consonants : " + full_name.count("^aeiou").to_s
+
+# puts full_name.start_with?("Daniel")
+
+# # returns the index where the middle name starts
+# puts "index : " + full_name.index("Moyer").to_s
+
+# .equal?
+# puts first_name.equal?first_name
+
+# puts full_name.upcase
+# puts full_name.downcase
+# puts full_name.swapcase
+
+# full_name = "     " + full_name
+
+# # removes blank space to the left
+# puts full_name.lstrip
+# # removes blank space to the right
+# puts full_name.rstrip
+# # removes all blankspace
+# puts full_name.strip
+
+# # justify- willhave to play with this output is it's ever actually needed.
+# puts full_name.rjust(20, '.')
+# puts full_name.ljust(20, '.')
+# puts full_name.center(30, '.')
+
+# # chops the last char
+# puts full_name.chop
+# # chomps the listed chars
+# puts full_name.chomp('on')
+
+# puts full_name.split(//)
+# puts full_name.split(/ /)
+# puts full_name.delete("e")
+
+# to_s to string
+# to_i to int
+# to_f to float
+# to_sym
+
+# Escape sequences
+# \\ backslash
+# \' single-quote
+# \" double-quote
+# \a bell
+# \b backspace
+# \formfeed
+# \n Newline
+# \r carriage
+# \t tab
+# \v verticle tab
+
+
+
+
+
 
 
 
