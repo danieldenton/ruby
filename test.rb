@@ -70,10 +70,14 @@ Logical : && || ! and or not
 #     puts "hello"
 # end
 
+
+
 # ternery
 # age = 13
 
 # puts (age >= 50) ? "Old" : "Young"
+
+
 
 # loops
 
@@ -116,6 +120,48 @@ Logical : && || ! and or not
 # (0..8).each do |i|
 #     puts "# #{i}"
 # end
+
+
+
+# functions
+
+# def  add(num1, num2)
+#     return num1 + num2
+# end
+
+# puts add(3, 4)
+
+
+# print "Enter a Number : "
+# first_num = gets.to_i
+# print "Enter Another : "
+# second_num = gets.to_i
+
+# begin
+#     answer = first_num /second_num
+
+# rescue
+#     puts "you can't divide by 0"
+#     exit
+# end
+
+# puts "#{first_num} / #{second_num} = #{answer}" 
+
+
+# age = 13
+
+# def check_age(age)
+#     raise ArgumentError, "Enter Positive Number" unless age > 0 
+# end
+
+# begin 
+#     check_age(-1)
+# rescue ArgumentError
+#     puts "That is an impossible age"
+# end
+
+
+
 
 
 
