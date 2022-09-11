@@ -32,5 +32,51 @@
 
 # puts "Data from file : " + data_from_file
 
-load "test2.rb"
+# load "test2.rb"
+
+=begin
+Multiline Comment
+=end
+
+# Conditional
+# age = 12
+
+# if (age >= 5) && (age <= 6)
+#     puts "You're in kindergarden"
+# elsif (age >= 7) && (age <= 13)
+#     puts "You're in middle school"
+# else
+#     puts "Stay home."
+# end
+
+=begin
+Comparison : == != < > <= >=
+Logical : && || ! and or not
+=end
+
+# print "Enter greeting : "
+
+# # chomp removes new line
+# greeting = gets.chomp
+
+# case greeting
+# when "French", "french"
+#     puts "Bonjour"
+#     exit
+# when "Spanish", "spanish"
+#     puts "Hola"
+#     exit
+# else "English"
+#     puts "hello"
+# end
+
+# ternery
+age = 13
+
+puts (age >= 50) ? "Old" : "Young"
+
+
+
+
+
 
