@@ -309,6 +309,37 @@ Logical : && || ! and or not
 # # %s for string %d for integers and %f for floats
 # printf "%s goes %s \n", winnie.name, winnie.bark()
 
+require_relative "humanmodule"
+require_relative "smartmodule"
+
+module Animal
+ def makle_sound
+        puts "Grrrr"
+ end
+end
+
+class Dog
+    include Animal
+end
+
+rump = Dog.new
+rump.makle_sound
+
+class Scientist
+    include Human
+# include includes ther module but can be obverwritten (same func name)
+# prepend cannot be overwritten
+    prepend Smart
+end
+
+jackson = Scientist.new
+jackson.name = "Bruce"
+puts jackson.name
+jackson.run
+puts jackson.name + " says " + jackson.act_smart
+
+
+
 
 
 
