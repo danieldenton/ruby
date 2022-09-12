@@ -411,31 +411,75 @@ Logical : && || ! and or not
 # puts num_hash["e"]
 
 # creates a hash. Prettys self explanatory how it works.
-superheroes = Hash["Clark Kent", "Superman", "Bruce Wayne", "Batman"]
-puts superheroes["Clark Kent"]
-# add one
-superheroes["Barry Allen"] = "Flash"
-puts superheroes
+# superheroes = Hash["Clark Kent", "Superman", "Bruce Wayne", "Batman"]
+# puts superheroes["Clark Kent"]
+# # add one
+# superheroes["Barry Allen"] = "Flash"
+# puts superheroes
 
-samp_hash = Hash.new("No Such Key")
-puts samp_hash["Dog"]
+# samp_hash = Hash.new("No Such Key")
+# puts samp_hash["Dog"]
 
-superheroines = Hash["Lisa Morel", "Aquagirl", "Betty Kane", "Batgirl"]
+# superheroines = Hash["Lisa Morel", "Aquagirl", "Betty Kane", "Batgirl"]
 
-# .update is a destrucive merge. any duplicate will be elliminated.
-superheroes.update(superheroines)
+# # .update is a destrucive merge. any duplicate will be elliminated.
+# superheroes.update(superheroines)
 # puts superheroes
 # .merge keeps duplicates
 # superheroes.merge(superheroines)
 
-superheroes.each do |key, value|
-    puts key.to_s + " : " + value.to_s
-end
+# superheroes.each do |key, value|
+#     puts key.to_s + " : " + value.to_s
+# end
 
-puts "Has Key Lisa Morel : " + superheroes.has_key?("Lisa Morel").to_s
-puts "Has Value Batman : " + superheroes.has_value?("Batman").to_s
-puts "Is Hash empty : " + superheroes.empty?.to_s
-puts "Size of Hash : " + superheroes.size.to_s
+# puts "Has Key Lisa Morel : " + superheroes.has_key?("Lisa Morel").to_s
+# puts "Has Value Batman : " + superheroes.has_value?("Batman").to_s
+# puts "Is Hash empty : " + superheroes.empty?.to_s
+# puts "Size of Hash : " + superheroes.size.to_s
+
+# superheroes.delete("Barry Allen")
+# puts superheroes
+
+# Enumerable
+# class Menu 
+#     include Enumerable
+
+#     def each
+#         yield "pizza"
+#         yield "spaghetti"
+#         yield "salad"
+#         yield "water"
+#         yield "bread"
+#     end
+# end
+
+# menu_options = Menu.new
+
+# menu_options.each do |item|
+#     puts "Would you like #{item}"
+# end
+
+# p menu_options.find{|item| item = "pizza"}
+# # gets all items specified
+# p menu_options.select{|item| item.size <= 5}
+# # rejects all specified. The opposite of select
+# p menu_options.reject{|item| item.size <= 5}
+# # first
+# p menu_options.first
+# # shows only the first 2
+# p menu_options.take(2)
+# # shows without the first 2
+# p menu_options.drop(2)
+# # the first or min index. Alphabetical order
+# p menu_options.min
+# # the last in the alphabet
+# p menu_options.max
+# # sort puts in alphabetical order
+# p menu_options.sort
+
+# menu_options.reverse_each {|item| puts item}
+
+
 
 
 
