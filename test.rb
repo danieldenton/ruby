@@ -309,34 +309,97 @@ Logical : && || ! and or not
 # # %s for string %d for integers and %f for floats
 # printf "%s goes %s \n", winnie.name, winnie.bark()
 
-require_relative "humanmodule"
-require_relative "smartmodule"
+# require_relative "humanmodule"
+# require_relative "smartmodule"
 
-module Animal
- def makle_sound
-        puts "Grrrr"
- end
-end
+# module Animal
+#  def makle_sound
+#         puts "Grrrr"
+#  end
+# end
 
-class Dog
-    include Animal
-end
+# class Dog
+#     include Animal
+# end
 
-rump = Dog.new
-rump.makle_sound
+# rump = Dog.new
+# rump.makle_sound
 
-class Scientist
-    include Human
-# include includes ther module but can be obverwritten (same func name)
-# prepend cannot be overwritten
-    prepend Smart
-end
+# class Scientist
+#     include Human
+# # include includes ther module but can be obverwritten (same func name)
+# # prepend cannot be overwritten
+#     prepend Smart
+# end
 
-jackson = Scientist.new
-jackson.name = "Bruce"
-puts jackson.name
-jackson.run
-puts jackson.name + " says " + jackson.act_smart
+# jackson = Scientist.new
+# jackson.name = "Bruce"
+# puts jackson.name
+# jackson.run
+# puts jackson.name + " says " + jackson.act_smart
+
+# class Bird
+#     def tweet(bird_type)
+#         bird_type.tweet
+#     end
+# end
+
+# class Cardinal < Bird
+#     def tweet
+#         puts "tweet tweet"
+#     end
+# end
+
+# class Parrot < Bird
+#     def tweet
+#         puts "squak"
+#     end
+# end
+
+# generic_bird = Bird.new
+# generic_bird.tweet(Cardinal.new)
+# generic_bird.tweet(Parrot.new)
+
+
+# arr1 = Array.new
+# arr2 = Array.new(5)
+# arr3 = Array.new(5, "empty")
+# arr4 = [1, "two", 3, 5.5]
+
+# puts arr1
+# puts arr2
+# puts arr3
+# puts arr4
+
+# # returns index
+# puts arr4[2]
+# # starting at index 2 return 2 items
+# puts arr4[2, 2]
+# # .join serarated by a comma
+# puts arr4[2, 2].join(", ")
+# # don't why this is needed nut here
+# puts arr4.values_at(0, 1, 3).join(", ")
+
+# # unshift adds at the beginning
+# arr4.unshift(0)
+# # removes item from the beginning
+# arr4.shift()
+# # push adds to the end
+# arr4.push(100, 200)
+# # removes last item
+# arr4.pop
+# # concat
+# arr4.concat([10,20,30])
+# puts "array size : " + arr4.size().to_s
+# puts "array contains 100 : " + arr4.include?(100).to_s
+# puts "how many 100s : " + arr4.count(100).to_s
+# puts "array empty : " + arr4.emprty?.to_s
+
+# puts arr4.join(", ")
+# p arr4
+# arr4.each do |value|
+#     puts value
+# end
 
 
 
