@@ -401,6 +401,49 @@ Logical : && || ! and or not
 #     puts value
 # end
 
+# Hashes
+
+# like a dictionary in Python except this thingy =>
+# num_hash = { "PI" => 3.14,
+# "Golden" => 1.618,
+# "e" => 2.718}
+# # sqare brackets
+# puts num_hash["e"]
+
+# creates a hash. Prettys self explanatory how it works.
+superheroes = Hash["Clark Kent", "Superman", "Bruce Wayne", "Batman"]
+puts superheroes["Clark Kent"]
+# add one
+superheroes["Barry Allen"] = "Flash"
+puts superheroes
+
+samp_hash = Hash.new("No Such Key")
+puts samp_hash["Dog"]
+
+superheroines = Hash["Lisa Morel", "Aquagirl", "Betty Kane", "Batgirl"]
+
+# .update is a destrucive merge. any duplicate will be elliminated.
+superheroes.update(superheroines)
+# puts superheroes
+# .merge keeps duplicates
+# superheroes.merge(superheroines)
+
+superheroes.each do |key, value|
+    puts key.to_s + " : " + value.to_s
+end
+
+puts "Has Key Lisa Morel : " + superheroes.has_key?("Lisa Morel").to_s
+puts "Has Value Batman : " + superheroes.has_value?("Batman").to_s
+puts "Is Hash empty : " + superheroes.empty?.to_s
+puts "Size of Hash : " + superheroes.size.to_s
+
+
+
+
+
+
+
+
 
 
 
