@@ -479,6 +479,41 @@ Logical : && || ! and or not
 
 # menu_options.reverse_each {|item| puts item}
 
+# File
+
+# the "w" allows you to write in it
+# file = File.new("authors.out", "w")
+
+# file.puts "William Burroughs"
+# file.puts "Chogyam Trungpa Rinpoche"
+# file.puts "Mitch Horowitz"
+# # like end, file needs to be closed
+# file.close
+
+# #  the "a" allows you to append
+# file = File.new("authors.out", "a")
+# file.puts "Tom Robbins"
+# file.close
+
+# puts File.read("authors.out")
+
+file = File.new("author_info.out", "w")
+
+file.puts "William Burroughs, English, cut up, 10 million"
+file.puts "Chogyam Trungpa Rinpoche, English, Tibetan Buddhism, 9 million"
+file.puts "Mitch Horowitz, English, Occult, 5 million"
+file.puts "Aleister Crowley, English, Occult, 11 million"
+
+file.close
+
+File.open("author_info.out") do |record|
+    record.each do |item|
+        name, lang, specialty, sales = item.chomp.split(',')
+
+        puts "#{name} was an #{lang} suthor that specialized in #{specialty}. They sold over #{sales} books."
+    end
+end
+
 
 
 
